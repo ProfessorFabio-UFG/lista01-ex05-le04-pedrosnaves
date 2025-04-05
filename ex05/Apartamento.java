@@ -1,13 +1,12 @@
 import java.util.ArrayList;
+public class Apartamento {
+    private int numero;
+    private int andar;
+    private double metragem;
+    private String situacao;
+    private ArrayList<Moradores> moradores;
 
-public class Apartamento{
-   private int numero;
-   private int andar;
-   private double metragem;
-   private String situacao;
-   private ArrayList<Moradores> moradores;
-
-    public Apartamento(int numero, int andar, double metragem, String situacao){
+    public Apartamento(int numero, int andar, double metragem, String situacao) {
         this.numero = numero;
         this.andar = andar;
         this.metragem = metragem;
@@ -16,11 +15,11 @@ public class Apartamento{
     }
 
     public int getNumero() {
-        return numero;
+        return this.numero;
     }
 
-    public void adicionarMorador(Moradores m) {
-        moradores.add(m);
+    public void AdicionarMorador(Moradores morador) {
+        this.moradores.add(morador);
     }
 
     public String toString() {
@@ -38,3 +37,4 @@ public class Apartamento{
     }
 
 }
+
